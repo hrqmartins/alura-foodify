@@ -86,3 +86,16 @@ def listar_restaurantes():
         print(f'- {nome_restaurante.ljust(20)} | {categoria.ljust(20)} | {ativo}')
     print('-------------------------------------------------------------------')
     voltar_ao_menu()
+    
+def exibir_subtitulo(texto):
+    ''' Exibe um subtítulo estilizado na tela 
+    
+    Inputs:
+    - texto: str - O texto do subtítulo
+    '''
+    os.system('cls')
+    linha = '=' * (len(texto))
+    print(linha)
+    print(texto)
+    print(linha)
+    print()
