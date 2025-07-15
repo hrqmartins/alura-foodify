@@ -121,3 +121,25 @@ def alternar_estado_restaurante():
         print('O restaurante não foi encontrado.')
 
     voltar_ao_menu()
+    
+def escolher_opcao():
+    ''' Solicita e executa a opção escolhida pelo usuário 
+    
+    Outputs:
+    - Executa a opção escolhida pelo usuário
+    '''
+    try:
+        opcao_escolhida = int(input('Escolha uma opção: '))
+    
+        if opcao_escolhida == 1: 
+            cadastrar_novo_restaurante()
+        elif opcao_escolhida == 2: 
+            listar_restaurantes()
+        elif opcao_escolhida == 3: 
+            alternar_estado_restaurante()
+        elif opcao_escolhida == 4: 
+            encerrar_app()
+        else:
+            opcao_invalida()
+    except:
+        opcao_invalida()   
