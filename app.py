@@ -38,3 +38,13 @@ def voltar_ao_menu():
     '''
     input('Pressione ENTER para voltar ao menu principal...')
     main()
+    
+# Função para exibir mensagem de opção inválida
+def opcao_invalida():
+    ''' Exibe mensagem de opção inválida e retorna ao menu principal 
+    
+    Outputs:
+    - Retorna ao menu principal
+    '''
+    print('Opção inválida! Por favor, escolha uma opção válida.')
+    voltar_ao_menu()
