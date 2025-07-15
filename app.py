@@ -68,3 +68,21 @@ def cadastrar_novo_restaurante():
     print(f'Restaurante "{nome_do_restaurante}" foi cadastrado com sucesso!')
     print('------------------------------------------\n')
     voltar_ao_menu()
+    
+def listar_restaurantes():
+    ''' Lista os restaurantes presentes na lista 
+    
+    Outputs:
+    - Exibe a lista de restaurantes na tela
+    '''
+    os.system('cls')
+    exibir_subtitulo('----- Lista de Restaurantes -----')
+
+    print(f'NOME DO RESTAURANTE'.ljust(23) + '| CATEGORIA'.ljust(23) + '| STATUS')
+    for restaurante in restaurantes:
+        nome_restaurante = restaurante['nome']
+        categoria = restaurante['categoria']
+        ativo = 'Ativado' if restaurante['ativo'] else 'Desativado'
+        print(f'- {nome_restaurante.ljust(20)} | {categoria.ljust(20)} | {ativo}')
+    print('-------------------------------------------------------------------')
+    voltar_ao_menu()
