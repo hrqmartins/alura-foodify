@@ -48,3 +48,23 @@ def opcao_invalida():
     '''
     print('Opção inválida! Por favor, escolha uma opção válida.')
     voltar_ao_menu()
+    
+def cadastrar_novo_restaurante():
+    '''  Função para cadastrar um novo restaurante 
+    
+    Inputs:
+    - Nome do restaurante
+    - Categoria do restaurante
+    
+    Outputs:
+    - Adiciona o restaurante à lista de restaurantes
+    '''
+    os.system('cls')
+    exibir_subtitulo('----- Cadastro de Novos Restaurante -----')
+    nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
+    categoria = input(f'Digite o nome da categoria do restaurante "{nome_do_restaurante}": ')
+    dados_do_restaurante = {'nome': nome_do_restaurante, 'categoria': categoria, 'ativo': False}  # Cria um dicionário com os dados do restaurante
+    restaurantes.append(dados_do_restaurante)  # Adiciona o dicionário à lista de restaurantes
+    print(f'Restaurante "{nome_do_restaurante}" foi cadastrado com sucesso!')
+    print('------------------------------------------\n')
+    voltar_ao_menu()
