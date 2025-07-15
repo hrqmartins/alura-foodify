@@ -64,23 +64,6 @@ Permite ativar ou desativar um restaurante com base no nome informado.
 
 ---
 
-## ❌ Funcionalidades a Serem Implementadas
-
-Ainda faltam algumas funcionalidades importantes para completar o projeto:
-
-### 🚧 Cadastro de Produtos
-- Incluir nome, descrição e preço dos itens do cardápio de cada restaurante.
-
-### 🚧 Realização de Pedidos
-- O cliente escolhe produtos, informa o endereço de entrega e finaliza o pedido.
-
-### 🚧 Gerenciamento de Pedidos
-- Permitir ao restaurante confirmar, preparar e enviar pedidos para entrega.
-
-### 🚧 Cálculo de Frete
-- Cálculo baseado em distância (simulada) ou regras definidas por restaurante.
-
----
 
 ## 💡 Como Executar
 
